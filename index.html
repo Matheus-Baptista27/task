@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Tarefas com JSpuro</title>
+    
+    <!-- CSS DO PROJETO-->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- biblioteca fonte awesome-->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+
+    <!-- js DO PROJETO-->
+    <script src="js/scripts.js" defer></script>
+
+</head>
+<body>
+    <div class="task-container">
+        <header>
+            <h1>Tarefas</h1>
+        </header>
+        <form id="task-form">
+            <p>Adicionar a sua tarefa:</p>
+            <div class="form-control">
+                <input type="text" id="task-input" placeholder="O que você vai fazer?" />
+                <button type="submit">
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <form id="edit-form" class="hide">
+            <p>Editar a sua tarefa:</p>
+            <div class="form-control">
+                <input type="text" id="edit-input" />
+                <button typ="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <button id="cancel-edit-btn">Cancelar</button>
+        </form>
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" id="search-input" placeholder="Buscar" />
+                    <button id="erase-button">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtrar:</h4>
+                <select id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="task">A fazer</option>
+                </select>
+            </div>
+        </div>
+        <div id="task-list">
+            <div class="task done">
+               
+            </div>
+            <div class="task">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
